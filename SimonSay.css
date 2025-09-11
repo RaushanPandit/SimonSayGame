@@ -1,0 +1,94 @@
+/* Center alignment */
+body {
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #141e30, #243b55);
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+}
+
+/* Title + subtitle */
+h1 {
+    font-size: 3rem;
+    margin-bottom: 0.2rem;
+    color: white;
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.5);
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    color: #fff9d9;
+}
+
+/* Button grid */
+.btn-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+/* Row styling */
+.line-one, .line-two {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+/* Simon Says buttons */
+.btn {
+    height: 160px;
+    width: 160px;
+    border-radius: 25%;
+    border: 8px solid #333;
+    cursor: pointer;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: rgba(0,0,0,0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+}
+
+/* Hover effect */
+.btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(255,255,255,0.6);
+}
+
+/* Colors */
+.red {
+    background-color: #9c455f;
+}
+.yellow {
+    background-color: #f99b45;
+}
+.green {
+    background-color: #63aac0;
+}
+.purple {
+    background-color: #819ff9;
+}
+
+/* Flash animation (game sequence) */
+.flash {
+    background-color: white !important;
+    box-shadow: 0 0 25px white;
+}
+
+/* Flash when user clicks */
+.userflash {
+    background-color: limegreen !important;
+    box-shadow: 0 0 25px limegreen;
+}
+
+/* Game over background flash */
+body.game-over {
+    background-color: red !important;
+}
